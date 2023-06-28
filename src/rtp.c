@@ -739,8 +739,8 @@ void janus_rtp_header_update(janus_rtp_header *header, janus_rtp_switching_conte
 		JANUS_LOG(LOG_VERB, "SSRC changed, %"SCNu32" --> %"SCNu32"\n",
 			context->last_ssrc, ssrc);
 		context->last_ssrc = ssrc;
-		context->ts_reset = TRUE;
-		context->seq_reset = TRUE;
+		// context->ts_reset = TRUE;
+		// context->seq_reset = TRUE;
 		/* Reset skew compensation data */
 		context->new_ssrc = TRUE;
 	}
